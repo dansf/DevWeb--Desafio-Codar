@@ -1,0 +1,40 @@
+<h2 style="text-align: center">
+    Desafio Codar
+</h2>
+
+<h4>
+    DevChallenge
+</h4>
+
+<p>
+    <b>Link do desafio:</b> <a href="https://devchallenge.now.sh/challenges/5ed47992adee277fae224a0b/details" target="_blank">DevChallenge</a>
+</p>
+
+<h4>
+    Desafio
+</h4>
+
+<p>
+    Seu desafio é criar uma página sobre uma empresa que desenvolve sites. O modelo final está disponível na pasta "design"
+</p>
+
+![Fotomobile](https://user-images.githubusercontent.com/63010902/112709645-041c3f80-8e9a-11eb-9ba8-14b9cf0cb0d1.png)
+
+![Fotopc](https://user-images.githubusercontent.com/63010902/112709644-fff02200-8e99-11eb-9fe8-55366aeb887a.jpg)
+
+<h4>
+    Ferramentas:
+</h4>
+
+<ul>
+    <li>Html</li>
+    <li>Css</li>
+    <li>Cor: #D6000D</li>
+    <li>Fonte: Roboto, sans-serif</li>
+</ul><br/>
+
+<p>
+    Criado por <a href="https://github.com/Lorenalgm" target="_blank">Lorena</a><br/>
+    Desenvolvido por <a href="https://github.com/dansf" target="_blank">Dansf</a>
+</p>
+
