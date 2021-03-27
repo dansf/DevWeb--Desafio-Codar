@@ -1,18 +1,18 @@
 <h2 style="text-align: center">
     Desafio Codar
 </h2>
-
-<h4>
+<h3>
     DevChallenge
-</h4>
+</h3>
 
 <p>
-    <b>Link do desafio:</b> <a href="https://devchallenge.now.sh/challenges/5ed47992adee277fae224a0b/details" target="_blank">DevChallenge</a>
+    Link do desafio: <a href="https://devchallenge.now.sh/challenges/5ed47992adee277fae224a0b/details" target="_blank">DevChallenge</a>
 </p>
 
-<h4>
-    Desafio
-</h4>
+<h3>
+    Objetivo
+</h3>
+
 
 <p>
     Seu desafio é criar uma página sobre uma empresa que desenvolve sites. O modelo final está disponível na pasta "design"
