@@ -14,6 +14,13 @@
 
     <!-- Link Css -->
     <link rel="stylesheet" href="./estilo.css">
+
+    <!-- Script Js-->
+    <script>
+        function alerte(){
+            window.alert("Estamos trabalhando nisso ainda!")
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -29,10 +36,10 @@
             </div>
 
             <ul>
-                <a href="#"><li>Início</li></a>
-                <a href="#"><li>Serviços</li></a>
-                <a href="#"><li>Contato</li></a>
-                <a href="#"><li class="button">Login<li></a>
+                <a href="#" onclick="alerte()"><li>Início</li></a>
+                <a href="#" onclick="alerte()"><li>Serviços</li></a>
+                <a href="#" onclick="alerte()"><li>Contato</li></a>
+                <a href="#" onclick="alerte()"><li class="button">Login<li></a>
             </ul>
         </div>
     </header>
@@ -48,7 +55,7 @@
                 <h3>Alavanque seu negócio com um</h3>
                 <h2>Website incrível</h2>
                 <div class="espaco"></div>
-                <div class="orcamentobotao">Solicitar orçamento</div>
+                <div class="orcamentobotao" onclick="alerte()">Solicitar orçamento</div>
             </div>
         </div>
     </section>
@@ -84,7 +91,58 @@
     </section>
 
     <footer>
+        <div class="comentarios">
+            <div class="conteinercomentario1">
+                <div class="img"></div>
 
+                <p>Já tive experiências com outras 4 empresas da área e a Codas é sem sombra de dúvidas superior em todos os aspectos.</p>
+
+                <p><h4>Pedro Ferreira<h4/>
+                    <p><b>Construtora Minari</b></p>
+                </p>
+
+            </div>
+
+            <div class="conteinercomentario2">
+                <div class="img"></div>
+                
+                <p>Processos bem simples e criação de um site exatamente como a minha escola queria!</p>
+
+                <p><h4>Maria Rita<h4/>
+                    <p><b>Escola Criança Feliz</b></p>
+                </p>
+            </div>
+        </div>
+
+        <div class="barrainferior">
+
+            <div>
+                <h2>Codar.</h2>
+                <p>Criamos websites incríveis</p>
+            </div>
+
+            <div>
+                <h3>Sobre</h3>
+                <p>Amamos criar soluções e entregar sites incríveis</p>
+            </div>
+
+            <div>
+                <h3>Contato</h3>
+                <address>
+                    123 Av. Manjar - Nárnia <br/>
+                    +55 96 2321-3131 <br/>
+                    <a href="#" onclick="alerte()">contato@codar.com</a>
+                </address>
+            </div>
+
+            <div class="redesocial">
+                <h3>Redes Sociais</h3>
+                <a href="#" onclick="alerte()"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" onclick="alerte()"><i class="fab fa-instagram"></i></a>
+                <a href="#" onclick="alerte()"><i class="fab fa-twitter-square"></i></a>
+            </div>
+
+        </div>
     </footer>
     
 </body>
