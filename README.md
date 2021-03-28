@@ -8,16 +8,17 @@
 <p>
     Link do desafio: <a href="https://devchallenge.now.sh/challenges/5ed47992adee277fae224a0b/details" target="_blank">DevChallenge</a>
 </p>
-
 <h3>
     Objetivo
 </h3>
 <p>
-    Seu desafio é criar uma página sobre uma empresa que desenvolve sites. O modelo final está disponível na pasta "design"
+    O desafio é criar uma página sobre uma empresa que desenvolve sites.
 </p>
 <p>
-    <b>Link do site:</b> <a href="https://dev-web-desafio-codar.vercel.app/" target="_blank">Codar</a>
+    <b><span style="font-size: 15pt">Link do site:</span></b><a href="https://dev-web-desafio-codar.vercel.app/" target="_blank">&nbsp;Codar</a>
+
 </p>
+
 
 ![Fotomobile](https://user-images.githubusercontent.com/63010902/112709645-041c3f80-8e9a-11eb-9ba8-14b9cf0cb0d1.png)
 

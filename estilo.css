@@ -124,3 +124,35 @@
 .orcamentobotao:hover{
     background-color: #f52f3c;
 }
+
+/* Segunda parte do ssection/site */
+.principal2{
+    display: flex;
+    height: 800px;
+    align-items: center;
+}
+
+.conteinerlista{
+    flex: 1;
+}
+
+.fa-ul{
+    list-style: none;
+}
+
+.fa-ul li{
+    margin: 10px 0px;
+}
+
+.fa-ul li i{
+    color:#D6000D;
+}
+
+.conteinerimg{
+    flex: 1;
+}
+
+.conteinerimg img{
+    width: 20vw;
+    height: 50vh;
+}
