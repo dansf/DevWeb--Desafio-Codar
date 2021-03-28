@@ -75,7 +75,7 @@
 /* Meio do site | section */
 .principal{
     display: flex;
-    height: 925px;
+    height: 800px;
     align-items: center;
 }
 
@@ -109,7 +109,6 @@
 .orcamentobotao{
     cursor: pointer;
     text-align: center;
-    align-items: center;
     padding-top: 10px;
     padding-bottom: 30px;
     color: white;
@@ -125,15 +124,14 @@
     background-color: #f52f3c;
 }
 
-/* Segunda parte do ssection/site */
+/* ============================================ */
+/* Segunda parte do section/site */
 .principal2{
-    display: flex;
+    display: grid;
     height: 800px;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-}
-
-.conteinerlista{
-    flex: 1;
+    padding-left: 350px;
 }
 
 .fa-ul{
@@ -141,18 +139,58 @@
 }
 
 .fa-ul li{
-    margin: 10px 0px;
+    margin: 20px 0px;
+    font-size: 18pt;
 }
 
 .fa-ul li i{
     color:#D6000D;
-}
-
-.conteinerimg{
-    flex: 1;
+    font-size: 25px;
 }
 
 .conteinerimg img{
     width: 20vw;
     height: 50vh;
+}
+
+.textolista h2{
+    font-size: 22pt;
+    padding-top: 40px;
+    padding-bottom: 15px;
+}
+
+.textolista .contato{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    width: 500px;
+    width: 20px;
+}
+
+.contato .celular{
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 17pt;
+    height: 10px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: rgb(201, 187, 187);
+    transition: 0.35s;
+}
+
+.contato .ligamos{
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    color: white;
+    font-size: 17pt;
+    height: 10px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #D6000D;
+    transition: 0.35s;
 }
