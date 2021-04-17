@@ -15,15 +15,12 @@
 </p>
 <p>
     <b><span style="font-size: 15pt">Link do site:</span></b><a href="https://dev-web-desafio-codar.vercel.app/" target="_blank" alt="Codar">&nbsp;Codar</a>
-
-
 <h3>
-    Desenvolimento:
+    Desenvolvimento:
 </h3>
 <p style="text-align: justify">
     Cabeçalho feito em display flex, infelizmente eu nao sabia uma forma melhor de colocar a palavra "Codar." na posição adequada, então criei dois conteiners com a tag "div" e ajeitei com a propriedade flex.
 </p>
-
 <p style="text-align: justify">
     Na lista para o menu de navegação eu tive muitos problemas, estava impossível de faze-la com o "botão" de login no final. Não estava conseguindo de jeito nenhum, mas depois de uma tarde e uma manhã procurando finalmente consegui fazer. <br/>Algumas coisas não fizeram muito sentido pra mim nesse css, por exemplo, em momentos que eu tentava colocar uma propriedade dentro de uma tag "pai" não funcionava, então eu colocava na "filho" e fluía o codigo, eu não sei porque, mas há esses detalhes que eu não estava entendendo pois achava que o certo seria colocar na tag "pai". <br/>
     Por exemplo: <br/> .cabecalho ul:{display: inline-block} (não funcionava)<br/>
@@ -58,4 +55,3 @@
     Criado por <a href="https://github.com/Lorenalgm" target="_blank">Lorena</a><br/>
     Desenvolvido por <a href="https://github.com/dansf" target="_blank">Dansf</a>
 </p>
-

@@ -20,7 +20,6 @@
     font-size: 20pt;
 }
 
-
 /* Personalização do nome "Codar." */
 .cabecalho a{
     color: #D6000D;
@@ -198,6 +197,14 @@
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 15px;
     height: 100px;
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.conteinercomentario1{
+    height: 10vh;
+    width: 20vw;
+    background-color: rgb(219, 219, 219);
 }
 
 .barrainferior{
@@ -205,6 +212,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: black;
     height: 100px;
+    width: 100%;
     color: white;
     padding: 30px 100px;
 }
