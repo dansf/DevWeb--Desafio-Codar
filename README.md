@@ -39,10 +39,9 @@
     Na barra final, criei um footer e coloquei duas divs de conteiner principal para comportar o conteudo de texto. Depois criei mais algumas divs pra fazer os blocos e separei eles com a propriedade do grid, grid-column-gap. Essa foi a parte mais facil de toda a página 😅.
 </p>-->
 
+<img src="https://user-images.githubusercontent.com/63010902/112709645-041c3f80-8e9a-11eb-9ba8-14b9cf0cb0d1.png" alt="Fotomobile" style="align-items:center;align:center" />
 
-![Fotomobile](https://user-images.githubusercontent.com/63010902/112709645-041c3f80-8e9a-11eb-9ba8-14b9cf0cb0d1.png)
-
-![Fotopc](https://user-images.githubusercontent.com/63010902/112709644-fff02200-8e99-11eb-9fe8-55366aeb887a.jpg)
+<img src="https://user-images.githubusercontent.com/63010902/112709644-fff02200-8e99-11eb-9fe8-55366aeb887a.jpg" alt="Fotopc" style="align-items:center;align:center" />
 
 <h4>
     Ferramentas:
