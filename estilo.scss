@@ -1,0 +1,256 @@
+/* Definindo padroes gerais da página */
+$red: #D6000D;
+$black: #000;
+$white: #fff;
+
+@mixin display($option, $option2, $option3){
+    display: $option;
+    justify-content: $option2;
+    align-items: $option3;
+    
+}
+
+*{
+    border-radius: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+}
+
+h1{
+    font-weight: 900;
+    color: $red;
+}
+
+span{
+    color: $black;
+}
+
+img{
+    width: 100%;
+}
+
+i{
+    color: $red;
+}
+
+// Navbar
+.navbar{
+    background-color: $white;
+    color: $black;
+
+    &_container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 40px;
+        @include display(flex, space-between, center);
+        height: 100%;
+        
+        ul{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+
+        a{
+            margin: 10px 15px;
+        }
+
+        .button{
+            font-weight: 600;
+            text-align: center;
+            height: 10px;
+            padding: 10px 10px;
+            color: $white;
+            height: 20px;
+            width: 80px;
+            border-radius: 15px;
+            background-color: $red;
+            transition: ease-in-out .4s;
+        }
+
+        .button:hover{
+            transition: ease-in-out .4s;
+            background-color: $white;
+            color: $red;
+        }
+    }
+}
+
+// Primeira parte do corpo do site
+.section{
+    @include display(grid, center, center);
+    grid-template-columns: repeat(2, 500px);
+    gap: 200px;
+    place-items: center;
+    color: $black;
+    background-color: $white;
+    margin: 30px 0;
+
+    &_esqcontainer{
+        height: 650px;
+        width: 650px;
+        padding: 20px 0px;
+    }
+
+    &_dircontainer{
+        color: $black;
+
+        h3{
+            font-size: 20pt;
+        }
+
+        h2{
+            color: $red;
+            font-size: 50pt;
+            margin-bottom: 50px; 
+        }
+
+        button{
+            text-align: center;
+            font-size: 17pt;
+            padding: 0px 10px;
+            color: $white;
+            height: 45px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: $red;
+            outline: none;
+            border: none;
+            transition: ease-in-out .4s;
+        }
+
+        button:hover{
+            background-color: $white;
+            color: $red;
+            transition: ease-in-out .4s;
+        }
+    }
+}
+
+// Segunda metade do site
+.section2{
+    @include display(grid, center, center);
+    grid-template-columns: repeat(2, 500px);
+    gap: 200px;
+}
+// /* ============================================ */
+// /* Segunda parte do section/site */
+// .principal2{
+//     display: grid;
+//     height: 800px;
+//     grid-template-columns: 1fr 1fr;
+//     align-items: center;
+//     padding-left: 350px;
+// }
+
+// .fa-ul{
+//     list-style: none;
+// }
+
+// .fa-ul li{
+//     margin: 20px 0px;
+//     font-size: 18pt;
+// }
+
+// .fa-ul li i{
+//     color: $red;
+//     font-size: 25px;
+// }
+
+// .conteinerimg img{
+//     width: 20vw;
+//     height: 50vh;
+// }
+
+// .textolista h2{
+//     font-size: 22pt;
+//     padding-top: 40px;
+//     padding-bottom: 15px;
+// }
+
+// .textolista .contato{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-column-gap: 15px;
+//     width: 500px;
+//     width: 20px;
+// }
+
+// .contato .celular{
+//     cursor: pointer;
+//     padding-top: 10px;
+//     padding-bottom: 30px;
+//     padding-left: 20px;
+//     color: rgba(0, 0, 0, 0.5);
+//     font-size: 17pt;
+//     height: 10px;
+//     width: 300px;
+//     border-radius: 15px;
+//     background-color: rgb(219, 219, 219);
+//     transition: 0.35s;
+// }
+
+// .contato .ligamos{
+//     cursor: pointer;
+//     text-align: center;
+//     padding-top: 10px;
+//     padding-bottom: 30px;
+//     color: $white;
+//     font-size: 17pt;
+//     height: 10px;
+//     width: 300px;
+//     border-radius: 15px;
+//     background-color: #D6000D;
+//     transition: 0.35s;
+// }
+
+// .comentarios{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     grid-column-gap: 15px;
+//     height: 100px;
+//     width: 100%;
+//     padding: 0px 100px;
+// }
+
+// .conteinercomentario1{
+//     height: 10vh;
+//     width: 20vw;
+//     background-color: rgb(219, 219, 219);
+// }
+
+// .barrainferior{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr;
+//     background-color: $black;
+//     height: 100px;
+//     width: 100%;
+//     color: $white;
+//     padding: 30px 100px;
+// }
+
+// .barrainferior h2, h3{
+//     padding: 5px 0px;
+// }
+
+// .barrainferior p{
+//     font-size: 15pt;
+// }
+
+// /* .barrainferior .redesocial{
+
+// } */
+
+// address{
+//     font-style: normal;
+// }

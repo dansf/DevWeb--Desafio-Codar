@@ -1,3 +1,3 @@
 function alerte(){
-    window.alert("Estamos trabalhando nisso ainda!")
+    window.alert("Em manutenção")
 }

@@ -1,234 +1,165 @@
-/* cor: #D6000D */
-
+@charset "UTF-8";
 /* Definindo padroes gerais da página */
-*{
-    border-radius: border-box;
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    margin: 0;
+* {
+  border-radius: border-box;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin: 0;
 }
 
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+ul {
+  list-style: none;
 }
 
-.cabecalho div{
-    flex: 1;
-    padding-left: 50px;
-    font-size: 20pt;
+a {
+  text-decoration: none;
+  color: #000;
 }
 
-/* Personalização do nome "Codar." */
-.cabecalho a{
-    color: #D6000D;
+h1 {
+  font-weight: 900;
+  color: #D6000D;
 }
 
-.cabecalho span{
-    color: black;
+span {
+  color: #000;
 }
 
-.cabecalho ul{
-    align-items: center;
-    list-style: none;
-    color: white;
-    margin: 0;
-    padding: 20px;
+img {
+  width: 100%;
 }
 
-.cabecalho li{
-    display: inline-block;
-    padding: 20px;
-    font-size: 15pt;
+i {
+  color: #D6000D;
 }
 
-.cabecalho ul a{
-    color: black;
-    transition: 0.35s;
+.navbar {
+  background-color: #fff;
+  color: #000;
 }
 
-.cabecalho ul a:hover{
-    color: #D6000D;
+.navbar_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
-.cabecalho ul a .button{
-    text-align: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    color: white;
-    height: 5px;
-    width: 90px;
-    border-radius: 15px;
-    background-color: #D6000D;
-    transition: 0.35s;
+.navbar_container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
 }
 
-.cabecalho ul a .button:hover{
-    background-color: #f52f3c;
+.navbar_container a {
+  margin: 10px 15px;
 }
 
-/* Meio do site | section */
-.principal{
-    display: flex;
-    height: 800px;
-    align-items: center;
+.navbar_container .button {
+  font-weight: 600;
+  text-align: center;
+  height: 10px;
+  padding: 10px 10px;
+  color: #fff;
+  height: 20px;
+  width: 80px;
+  border-radius: 15px;
+  background-color: #D6000D;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
 }
 
-.imgconteiner{
-    flex: 1;
-    padding-left: 350px;
+.navbar_container .button:hover {
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+  background-color: #fff;
+  color: #D6000D;
 }
 
-.imgconteiner img{
-    height: 50vh;
-    width: 25vw;
+.section {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (500px)[2];
+      grid-template-columns: repeat(2, 500px);
+  gap: 200px;
+  place-items: center;
+  color: #000;
+  background-color: #fff;
+  margin: 30px 0;
 }
 
-.textoimg{
-    flex: 1;
+.section_esqcontainer {
+  height: 650px;
+  width: 650px;
+  padding: 20px 0px;
 }
 
-.textoimg h3{
-    font-size: 20pt;
+.section_dircontainer {
+  color: #000;
 }
 
-.textoimg h2{
-    font-size: 55pt;
-    color: #D6000D;
+.section_dircontainer h3 {
+  font-size: 20pt;
 }
 
-.espaco{
-    height: 55px;
+.section_dircontainer h2 {
+  color: #D6000D;
+  font-size: 50pt;
+  margin-bottom: 50px;
 }
 
-.orcamentobotao{
-    cursor: pointer;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    color: white;
-    font-size: 20pt;
-    height: 15px;
-    width: 350px;
-    border-radius: 15px;
-    background-color: #D6000D;
-    transition: 0.35s;
+.section_dircontainer button {
+  text-align: center;
+  font-size: 17pt;
+  padding: 0px 10px;
+  color: #fff;
+  height: 45px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #D6000D;
+  outline: none;
+  border: none;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
 }
 
-.orcamentobotao:hover{
-    background-color: #f52f3c;
+.section_dircontainer button:hover {
+  background-color: #fff;
+  color: #D6000D;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
 }
 
-/* ============================================ */
-/* Segunda parte do section/site */
-.principal2{
-    display: grid;
-    height: 800px;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding-left: 350px;
+.section2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (500px)[2];
+      grid-template-columns: repeat(2, 500px);
+  gap: 200px;
 }
-
-.fa-ul{
-    list-style: none;
-}
-
-.fa-ul li{
-    margin: 20px 0px;
-    font-size: 18pt;
-}
-
-.fa-ul li i{
-    color:#D6000D;
-    font-size: 25px;
-}
-
-.conteinerimg img{
-    width: 20vw;
-    height: 50vh;
-}
-
-.textolista h2{
-    font-size: 22pt;
-    padding-top: 40px;
-    padding-bottom: 15px;
-}
-
-.textolista .contato{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-    width: 500px;
-    width: 20px;
-}
-
-.contato .celular{
-    cursor: pointer;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 17pt;
-    height: 10px;
-    width: 300px;
-    border-radius: 15px;
-    background-color: rgb(219, 219, 219);
-    transition: 0.35s;
-}
-
-.contato .ligamos{
-    cursor: pointer;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 30px;
-    color: white;
-    font-size: 17pt;
-    height: 10px;
-    width: 300px;
-    border-radius: 15px;
-    background-color: #D6000D;
-    transition: 0.35s;
-}
-
-.comentarios{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 15px;
-    height: 100px;
-    width: 100%;
-    padding: 0px 100px;
-}
-
-.conteinercomentario1{
-    height: 10vh;
-    width: 20vw;
-    background-color: rgb(219, 219, 219);
-}
-
-.barrainferior{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    color: white;
-    padding: 30px 100px;
-}
-
-.barrainferior h2, h3{
-    padding: 5px 0px;
-}
-
-.barrainferior p{
-    font-size: 15pt;
-}
-
-/* .barrainferior .redesocial{
-
-} */
-
-address{
-    font-style: normal;
-}
+/*# sourceMappingURL=estilo.css.map */
