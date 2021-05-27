@@ -69,17 +69,27 @@ i {
 }
 
 .navbar_container a {
+  font-size: 13pt;
+  font-weight: 600;
   margin: 10px 15px;
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+}
+
+.navbar_container a:hover {
+  -webkit-transition: ease-in-out .4s;
+  transition: ease-in-out .4s;
+  color: #D6000D;
 }
 
 .navbar_container .button {
+  font-size: 12pt;
   font-weight: 600;
   text-align: center;
-  height: 10px;
-  padding: 10px 10px;
+  padding: 10px 0px;
   color: #fff;
   height: 20px;
-  width: 80px;
+  width: 110px;
   border-radius: 15px;
   background-color: #D6000D;
   -webkit-transition: ease-in-out .4s;
@@ -262,7 +272,7 @@ i {
   -ms-grid-columns: (700px)[2];
       grid-template-columns: repeat(2, 700px);
   gap: 200px;
-  height: 500px;
+  height: 600px;
 }
 
 .section3 .img {
@@ -286,22 +296,26 @@ i {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #cfcfcf;
-  -ms-grid-columns: (300px)[2];
-      grid-template-columns: repeat(2, 300px);
+  -ms-grid-columns: 100px 500px;
+      grid-template-columns: 100px 500px;
+  gap: 40px;
   border-radius: 10px;
-  padding: 40px;
+  padding: 80px;
+  width: 550px;
+  height: 120px;
 }
 
 .section3_container1 h3, .section3_container2 h3 {
   font-size: 20pt;
 }
 
-.section3_container1 .texto p:nth-child(1), .section3_container2 .texto p:nth-child(1) {
+.section3_container1 .texto:nth-child(1) p:nth-child(1), .section3_container2 .texto:nth-child(1) p:nth-child(1) {
   font-size: 15pt;
 }
 
-.section3_container1 .texto p:nth-child(2), .section3_container2 .texto p:nth-child(2) {
-  margin-bottom: 15px;
+.section3_container1 .texto:nth-child(2) p:nth-child(1), .section3_container2 .texto:nth-child(2) p:nth-child(1) {
+  font-size: 15pt;
+  margin-bottom: 30px;
 }
 
 .footer {

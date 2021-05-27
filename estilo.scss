@@ -74,17 +74,25 @@ i{
         }
 
         a{
+            font-size: 13pt;
+            font-weight: 600;
             margin: 10px 15px;
+            transition: ease-in-out .4s;
+        }
+        
+        a:hover{
+            transition: ease-in-out .4s;
+            color: $red;
         }
 
         .button{
+            font-size: 12pt;
             font-weight: 600;
             text-align: center;
-            height: 10px;
-            padding: 10px 10px;
+            padding: 10px 0px;
             color: $white;
             height: 20px;
-            width: 80px;
+            width: 110px;
             border-radius: 15px;
             background-color: $red;
             transition: ease-in-out .4s;
@@ -219,7 +227,7 @@ i{
     @include display(grid, center, flex-end);
     grid-template-columns: repeat(2, 700px);
     gap: 200px;
-    height: 500px;
+    height: 600px;
 
     .img{
         background-color: $red;
@@ -230,21 +238,26 @@ i{
 
     &_container1, &_container2{
         @include comentarios(column, $gray);
-        grid-template-columns: repeat(2, 300px);
+        grid-template-columns: 100px 500px;
+        gap: 40px;
         border-radius: 10px;
-        padding: 40px;
+        padding: 80px;
+        width: 550px;
+        height: 120px;
 
         h3{
             font-size: 20pt;
         }
 
-        .texto p:nth-child(1){
+        .texto:nth-child(1) p:nth-child(1){
             font-size: 15pt;
         }
 
-        .texto p:nth-child(2){
-            margin-bottom: 15px;
+        .texto:nth-child(2) p:nth-child(1){
+            font-size: 15pt;
+            margin-bottom: 30px;
         }
+
     }
 }
 
@@ -268,6 +281,7 @@ i{
         address{
             line-height: 2.5;
         }
+
         a{
             text-decoration: underline;
             color: $white;
