@@ -2,12 +2,24 @@
 $red: #D6000D;
 $black: #000;
 $white: #fff;
+$gray: rgb(207, 207, 207);
+$shadow: 0px 0px 5px 3px rgba($color: #6b6b6b, $alpha: 0.3);
 
 @mixin display($option, $option2, $option3){
     display: $option;
     justify-content: $option2;
     align-items: $option3;
     
+}
+
+@mixin comentarios($option1, $option2){
+    @include display(grid, center, flex-start);
+    flex-direction: $option1;
+    background-color: $option2;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 *{
@@ -49,7 +61,7 @@ i{
     color: $black;
 
     &_container{
-        max-width: 1200px;
+        max-width: 1100px;
         margin: 0 auto;
         padding: 0 40px;
         @include display(flex, space-between, center);
@@ -95,10 +107,11 @@ i{
     color: $black;
     background-color: $white;
     margin: 30px 0;
+    height: 900px;
 
     &_esqcontainer{
-        height: 650px;
-        width: 650px;
+        height: 550px;
+        width: 550px;
         padding: 20px 0px;
     }
 
@@ -116,6 +129,7 @@ i{
         }
 
         button{
+            cursor: pointer;
             text-align: center;
             font-size: 17pt;
             padding: 0px 10px;
@@ -140,117 +154,128 @@ i{
 // Segunda metade do site
 .section2{
     @include display(grid, center, center);
-    grid-template-columns: repeat(2, 500px);
+    grid-template-columns: repeat(2, 600px);
     gap: 200px;
+    place-items: center;
+    height: 900px;
+
+    &_esqcontainer{
+        li{
+            margin: 15px 0;
+            font-size: 15pt;
+        }
+    }
+
+    &_contato{
+        h2{
+            margin-top: 60px;
+            margin-bottom: 10px;
+        }
+    } 
+
+    &_botoes{
+
+        input[type=text]:nth-child(1){
+            outline: none;
+            border-radius: 10px;
+            border-width: 0;
+            background-color: $gray;
+            height: 40px;
+            width: 220px;
+            padding: 5px 20px;
+            font-weight: 600;
+            margin-right: 15px;
+        }
+
+        input[type=text]:nth-child(1)::placeholder{
+            font-size: 14.5pt;
+            padding-left: 10px;
+        }
+
+        input[type=text]:nth-child(2){
+            background-color: $red;
+            outline: none;
+            border-width: 0;
+            border-radius: 10px;
+            height: 40px;
+            width: 240px;
+            padding: 5px 20px;
+            color: $white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        input[type=text]:nth-child(2)::placeholder{
+            color: $white;
+            font-size: 14.5pt;
+            text-align: center;
+            
+        }
+    }
 }
-// /* ============================================ */
-// /* Segunda parte do section/site */
-// .principal2{
-//     display: grid;
-//     height: 800px;
-//     grid-template-columns: 1fr 1fr;
-//     align-items: center;
-//     padding-left: 350px;
-// }
 
-// .fa-ul{
-//     list-style: none;
-// }
+// Terceira metade do site
+.section3{
+    @include display(grid, center, flex-end);
+    grid-template-columns: repeat(2, 700px);
+    gap: 200px;
+    height: 500px;
 
-// .fa-ul li{
-//     margin: 20px 0px;
-//     font-size: 18pt;
-// }
+    .img{
+        background-color: $red;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+    }
 
-// .fa-ul li i{
-//     color: $red;
-//     font-size: 25px;
-// }
+    &_container1, &_container2{
+        @include comentarios(column, $gray);
+        grid-template-columns: repeat(2, 300px);
+        border-radius: 10px;
+        padding: 40px;
 
-// .conteinerimg img{
-//     width: 20vw;
-//     height: 50vh;
-// }
+        h3{
+            font-size: 20pt;
+        }
 
-// .textolista h2{
-//     font-size: 22pt;
-//     padding-top: 40px;
-//     padding-bottom: 15px;
-// }
+        .texto p:nth-child(1){
+            font-size: 15pt;
+        }
 
-// .textolista .contato{
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-column-gap: 15px;
-//     width: 500px;
-//     width: 20px;
-// }
+        .texto p:nth-child(2){
+            margin-bottom: 15px;
+        }
+    }
+}
 
-// .contato .celular{
-//     cursor: pointer;
-//     padding-top: 10px;
-//     padding-bottom: 30px;
-//     padding-left: 20px;
-//     color: rgba(0, 0, 0, 0.5);
-//     font-size: 17pt;
-//     height: 10px;
-//     width: 300px;
-//     border-radius: 15px;
-//     background-color: rgb(219, 219, 219);
-//     transition: 0.35s;
-// }
+.footer{
+    @include display(grid, center, flex-start);
+    grid-template-columns: repeat(4, 500px);
+    height: 300px;
+    background: $black;
+    color: $white;
+    margin-top: 150px;
+    padding-top: 100px;
 
-// .contato .ligamos{
-//     cursor: pointer;
-//     text-align: center;
-//     padding-top: 10px;
-//     padding-bottom: 30px;
-//     color: $white;
-//     font-size: 17pt;
-//     height: 10px;
-//     width: 300px;
-//     border-radius: 15px;
-//     background-color: #D6000D;
-//     transition: 0.35s;
-// }
+    div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4){
+        h2{
+            font-size: 25pt;
+            margin: 15px 0px;
+        }
+    }
 
-// .comentarios{
-//     display: grid;
-//     grid-template-columns: 1fr 1fr;
-//     grid-column-gap: 15px;
-//     height: 100px;
-//     width: 100%;
-//     padding: 0px 100px;
-// }
+    div:nth-child(3){
+        address{
+            line-height: 2.5;
+        }
+        a{
+            text-decoration: underline;
+            color: $white;
+        }
+    }
 
-// .conteinercomentario1{
-//     height: 10vh;
-//     width: 20vw;
-//     background-color: rgb(219, 219, 219);
-// }
-
-// .barrainferior{
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr 1fr;
-//     background-color: $black;
-//     height: 100px;
-//     width: 100%;
-//     color: $white;
-//     padding: 30px 100px;
-// }
-
-// .barrainferior h2, h3{
-//     padding: 5px 0px;
-// }
-
-// .barrainferior p{
-//     font-size: 15pt;
-// }
-
-// /* .barrainferior .redesocial{
-
-// } */
-
-// address{
-//     font-style: normal;
-// }
+    .fab{
+        font-size: 25pt;
+        margin: 0px 15px;
+    }
+}

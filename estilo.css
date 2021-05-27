@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /* Definindo padroes gerais da página */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   border-radius: border-box;
   font-family: 'Roboto', sans-serif;
@@ -39,7 +43,7 @@ i {
 }
 
 .navbar_container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 40px;
   display: -webkit-box;
@@ -105,11 +109,12 @@ i {
   color: #000;
   background-color: #fff;
   margin: 30px 0;
+  height: 900px;
 }
 
 .section_esqcontainer {
-  height: 650px;
-  width: 650px;
+  height: 550px;
+  width: 550px;
   padding: 20px 0px;
 }
 
@@ -128,6 +133,7 @@ i {
 }
 
 .section_dircontainer button {
+  cursor: pointer;
   text-align: center;
   font-size: 17pt;
   padding: 0px 10px;
@@ -158,8 +164,180 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: (500px)[2];
-      grid-template-columns: repeat(2, 500px);
+  -ms-grid-columns: (600px)[2];
+      grid-template-columns: repeat(2, 600px);
   gap: 200px;
+  place-items: center;
+  height: 900px;
+}
+
+.section2_esqcontainer li {
+  margin: 15px 0;
+  font-size: 15pt;
+}
+
+.section2_contato h2 {
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.section2_botoes input[type=text]:nth-child(1) {
+  outline: none;
+  border-radius: 10px;
+  border-width: 0;
+  background-color: #cfcfcf;
+  height: 40px;
+  width: 220px;
+  padding: 5px 20px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.section2_botoes input[type=text]:nth-child(1)::-webkit-input-placeholder {
+  font-size: 14.5pt;
+  padding-left: 10px;
+}
+
+.section2_botoes input[type=text]:nth-child(1):-ms-input-placeholder {
+  font-size: 14.5pt;
+  padding-left: 10px;
+}
+
+.section2_botoes input[type=text]:nth-child(1)::-ms-input-placeholder {
+  font-size: 14.5pt;
+  padding-left: 10px;
+}
+
+.section2_botoes input[type=text]:nth-child(1)::placeholder {
+  font-size: 14.5pt;
+  padding-left: 10px;
+}
+
+.section2_botoes input[type=text]:nth-child(2) {
+  background-color: #D6000D;
+  outline: none;
+  border-width: 0;
+  border-radius: 10px;
+  height: 40px;
+  width: 240px;
+  padding: 5px 20px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.section2_botoes input[type=text]:nth-child(2)::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 14.5pt;
+  text-align: center;
+}
+
+.section2_botoes input[type=text]:nth-child(2):-ms-input-placeholder {
+  color: #fff;
+  font-size: 14.5pt;
+  text-align: center;
+}
+
+.section2_botoes input[type=text]:nth-child(2)::-ms-input-placeholder {
+  color: #fff;
+  font-size: 14.5pt;
+  text-align: center;
+}
+
+.section2_botoes input[type=text]:nth-child(2)::placeholder {
+  color: #fff;
+  font-size: 14.5pt;
+  text-align: center;
+}
+
+.section3 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-grid-columns: (700px)[2];
+      grid-template-columns: repeat(2, 700px);
+  gap: 200px;
+  height: 500px;
+}
+
+.section3 .img {
+  background-color: #D6000D;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.section3_container1, .section3_container2 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #cfcfcf;
+  -ms-grid-columns: (300px)[2];
+      grid-template-columns: repeat(2, 300px);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.section3_container1 h3, .section3_container2 h3 {
+  font-size: 20pt;
+}
+
+.section3_container1 .texto p:nth-child(1), .section3_container2 .texto p:nth-child(1) {
+  font-size: 15pt;
+}
+
+.section3_container1 .texto p:nth-child(2), .section3_container2 .texto p:nth-child(2) {
+  margin-bottom: 15px;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-grid-columns: (500px)[4];
+      grid-template-columns: repeat(4, 500px);
+  height: 300px;
+  background: #000;
+  color: #fff;
+  margin-top: 150px;
+  padding-top: 100px;
+}
+
+.footer div:nth-child(1) h2, .footer div:nth-child(2) h2, .footer div:nth-child(3) h2, .footer div:nth-child(4) h2 {
+  font-size: 25pt;
+  margin: 15px 0px;
+}
+
+.footer div:nth-child(3) address {
+  line-height: 2.5;
+}
+
+.footer div:nth-child(3) a {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.footer .fab {
+  font-size: 25pt;
+  margin: 0px 15px;
 }
 /*# sourceMappingURL=estilo.css.map */
