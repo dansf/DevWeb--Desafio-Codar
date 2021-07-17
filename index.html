@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codar.</title>
+
     <!-- Link Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,132 +17,129 @@
     <link rel="shortcut icon" href="./Banco de imagens/code-solid.svg">
 
     <!-- Link Css -->
-    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="./Css/estilo.css">
 
     <!-- Script Js-->
-    <script src="Script.js"></script>
+    <script src="./JavaScript/Script.js"></script>
+
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <div class="navbar_container">
-                <h1 class="logo">
-                    <strong>
-                        <em>Codar</em><span>.</span>
-                    </strong>  
-                </h1>
-            
-                <nav>
-                    <ul>
-                        <a href="#" onclick="alerte()"><li>Início</li></a>
-                        <a href="#" onclick="alerte()"><li>Serviços</li></a>
-                        <a href="#" onclick="alerte()"><li>Contato</li></a>
-                        <a href="#" class="button" onclick="alerte()"><li >Login<li></a>
-                    </ul>
-                </nav>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Codar<span>.</span></h1>
+                </div>
+
+                <div class="links">
+                    <nav>
+                        <ul>
+                            <li><a href="#" onclick="alerte()">Início</a></li>
+                            <li><a href="#" onclick="alerte()">Serviços</a></li>
+                            <li><a href="#" onclick="alerte()">Contato</a></li>
+                            <li><a href="#" onclick="alerte()">Login</a><li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <!-- Primeira metade do site -->
-    <section>
-        <div class="section">
-            <div class="section_esqcontainer">
-                <img src="https://user-images.githubusercontent.com/63010902/112710029-e13f5a80-8e9c-11eb-8ce9-d32a2c96ae9e.png" alt="CodarVideoCall">
+        <!-- Primeira metade do site -->
+        <section>
+            <div class="section1">
+                <div class="esquerda1">
+                    <img src="https://user-images.githubusercontent.com/63010902/112710029-e13f5a80-8e9c-11eb-8ce9-d32a2c96ae9e.png" alt="CodarVideoCall">
+                </div>
+
+                <div class="direita1">
+                    <h3>Alavanque seu negócio com um</h3>
+                    <h2>Website incrível</h2>
+                    <a href="#" onclick="alerte()">Solicitar orçamento</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Segunda metade do site -->
+        <section class="sectionpart2">
+            <div class="section2">
+                <div class="esquerda2">
+                    <ul class="fa-ul">
+                        <li><i class="fa-li fa fa-check-circle"></i>Domínio personalizado</li>
+                        <li><i class="fa-li fa fa-check-circle"></i>Hospedagem</li>
+                        <li><i class="fa-li fa fa-check-circle"></i>Site responsivo</li>
+                        <li><i class="fa-li fa fa-check-circle"></i>Redes sociais</li>
+                        <li><i class="fa-li fa fa-check-circle"></i>Chat online</li>
+                        <li><i class="fa-li fa fa-check-circle"></i>Blog integrado</li>
+                    </ul>                    
+                </div>
+                
+                <div class="direita2">
+                    <img src="https://user-images.githubusercontent.com/63010902/112737705-24e8a180-8f3b-11eb-922d-62cea47f2988.png" alt="Coding">
+                </div>                
             </div>
 
-            <div class="section_dircontainer">
-                <h3>Alavanque seu negócio com um</h3>
-                <h2>Website incrível</h2>
-                <button onclick="alerte()">Solicitar orçamento</button>
+            <div class="contato2">
+                <h4>Nossa equipe está a disposição!</h4>
+                <input type="text" placeholder="Celular">
+                <input type="text" placeholder="Ligamos para você" readonly>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Segunda metade do site -->
-    <section>
-        <div class="section2">
-            <div class="section2_esqcontainer">
-                <ul class="fa-ul">
-                    <li><i class="fa-li fa fa-check-circle"></i>Domínio personalizado</li>
-                    <li><i class="fa-li fa fa-check-circle"></i>Hospedagem</li>
-                    <li><i class="fa-li fa fa-check-circle"></i>Site responsivo</li>
-                    <li><i class="fa-li fa fa-check-circle"></i>Redes sociais</li>
-                    <li><i class="fa-li fa fa-check-circle"></i>Chat online</li>
-                    <li><i class="fa-li fa fa-check-circle"></i>Blog integrado</li>
-                </ul>
+        <!-- Terceira metade do site -->
+        <section>
+            <div class="section3">
+                <div class="esquerda3">
+                    <div class="img"></div>
+                    <div class="texto">
+                        <p class="p1">Já tive experiências com outras 4 empresas da área e a Codas é sem sombra de dúvidas superior em todos os aspectos.</p>
+                        <h3>Pedro Ferreira</h3>
+                        <p class="p2">Construtora Minari</p>
+                    </div>
+                </div>
 
-                <div class="section2_contato">
-                    <h2>
-                        Nossa equipe está a disposição!
-                    </h2>
-
-                    <div class="section2_botoes">
-                        <input type="text" placeholder="Celular">
-                        <input type="text" placeholder="Ligamos para você" readonly>
+                <div class="direita3">
+                    <div class="img"></div>
+                    <div class="texto">
+                        <p class="p1">Processos bem simples e criação de um site exatamente como a minha escola queria!</p>
+                        <h3>Maria Rita</h3>
+                        <p class="p2">Escola Criança Feliz</p>
                     </div>
                 </div>
             </div>
+        </section> 
+    </div>
 
-            <div class="conteinerimg">
-                <img src="https://user-images.githubusercontent.com/63010902/112737705-24e8a180-8f3b-11eb-922d-62cea47f2988.png" alt="Coding">
-            </div>
-        </div>
-    </section>
-
-    <!-- Terceira metade do site -->
-    <section>
-        <div class="section3">
-            <div class="section3_container1">
-                <div class="img"></div>
-                <div class="texto">
-                    <p>Já tive experiências com outras 4 empresas da área e a Codas é sem sombra de dúvidas superior em todos os aspectos.</p>
-                    <h3>Pedro Ferreira<h3/>
-                    <p>Construtora Minari</p>
-                </div>
-            </div>
-
-            <div class="section3_container2">
-                <div class="img"></div>
-                <div class="texto">
-                    <p>Processos bem simples e criação de um site exatamente como a minha escola queria!</p>
-                    <h3>Maria Rita<h3/>
-                    <p>Escola Criança Feliz</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Rodapé do site -->
     <footer>
-        <div class="footer">
-            <div>
-                <h2>Codar.</h2>
-                <p>Criamos websites incríveis</p>
-            </div>
+        <div class="container_footer">
+            <div class="footer">
+                <div>
+                    <h2>Codar.</h2>
+                    <p>Criamos websites incríveis</p>
+                </div>
 
-            <div>
-                <h2>Sobre</h2>
-                <p>Amamos criar soluções <br> e entregar sites incríveis</p>
-            </div>
+                <div>
+                    <h2>Sobre</h2>
+                    <p>Amamos criar soluções <br> e entregar sites incríveis</p>
+                </div>
 
-            <div>
-                <h2>Contato</h2>
-                <address>
-                    123 Av. Manjar - Nárnia <br/>
-                    +55 96 2321-3131 <br/>
-                    <a href="#" onclick="alerte()">contato@codar.com</a>
-                </address>
-            </div>
+                <div>
+                    <h2>Contato</h2>
+                    <address>
+                        <p>123 Av. Manjar - Nárnia</p>
+                        <p>+55 96 2321-3131</p>
+                        <p><a href="#" onclick="alerte()">contato@codar.com</a></p>
+                    </address>
+                </div>
 
-            <div class="redesocial">
-                <h2>Redes Sociais</h2>
-                <a href="#" onclick="alerte()"><i class="fab fa-facebook-square"></i></a>
-                <a href="#" onclick="alerte()"><i class="fab fa-instagram"></i></a>
-                <a href="#" onclick="alerte()"><i class="fab fa-twitter-square"></i></a>
+                <div class="redesocial">
+                    <h2>Redes Sociais</h2>
+                    <a href="#" onclick="alerte()"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" onclick="alerte()"><i class="fab fa-instagram"></i></a>
+                    <a href="#" onclick="alerte()"><i class="fab fa-twitter-square"></i></a>
+                </div>
             </div>
-
         </div>
     </footer>
-    
 </body>
 </html>

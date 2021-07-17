@@ -1,0 +1,302 @@
+/* Definindo padroes gerais da página */
+$red: #D6000D;
+$clearred: #e74953;
+$black: #000;
+$white: #fff;
+$gray: rgb(207, 207, 207);
+$margin: 0 auto;
+$border: 1px solid red;
+// $shadow: 0px 0px 5px 3px rgba($color: #6b6b6b, $alpha: 0.3);
+
+@mixin display($option, $option2, $option3){
+    display: $option;
+    justify-content: $option2;
+    align-items: $option3;
+}
+
+@mixin colorst($option, $option2, $option3){
+    color: $option;
+    background-color: $option2;
+    transition: $option3;
+}
+
+/*Formatações padrões*/
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    border-radius: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+i{
+    color: $red;
+}
+
+.container{
+    width: clamp(40%, 1100px, 80%);
+    margin: $margin;
+}
+
+.navbar{
+    display: flex;
+    height: 50px;
+    margin-top: 20px;
+
+    .logo{
+        flex-grow: 1;
+        line-height: 50px;
+        font-style: italic;
+        font-weight: 900;
+        color: $red;
+    }
+
+    .logo span{
+        color: $black;
+    }
+
+    .links{
+        font-size: 20px;
+    }
+
+    .links li{
+        display: inline;
+        line-height: 50px;
+    }
+
+    .links li a{
+        margin: 0 20px;
+        transition: .3s;
+    }
+
+    .links li a:hover{
+        @include colorst($red, $white, .3s);
+    }
+
+    .links li:nth-child(4) a{
+        @include colorst($white, $red, .3s);
+        padding: 8px 50px;
+        border-radius: 10px;
+    }
+
+    .links li:nth-child(4) a:hover{
+        @include colorst($white, $clearred, .3s);
+    }
+}
+
+.section1{
+    display: flex;
+    margin: 130px 0;
+    height: 700px;
+    
+    .esquerda1{
+        flex-grow: 1;
+        @include display(flex, none, center);
+        width: 50%;
+        height: 100%;
+        
+        img{
+            width: 90%;
+            height: 80%;
+        }
+    }
+
+    .direita1{
+        flex-grow: 1;
+        @include display(flex, center, none);
+        flex-direction: column;
+
+        h3{
+            font-size: 20px;
+        }
+
+        h2{
+            font-size: 50px;
+            color: $red;
+            margin-bottom: 50px;
+        }
+
+        a{
+            @include colorst($white, $red, .3s);
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            padding: 8px 30px;
+            font-size: 25px;
+        }
+
+        a:hover{
+            @include colorst($white, $clearred, .3s);
+        }
+    }
+}
+
+//Apenas detalhes
+.sectionpart2{
+    margin: 150px 0;
+}
+
+.section2{
+    @include display(flex, space-between, center);
+    height: 500px;
+
+    .esquerda2{
+        @include display(flex, none, center);
+        flex-wrap: wrap;
+        font-size: 25px;
+
+        li{
+            margin: 15px 0;
+
+            i{
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+
+    .direita2{
+        @include display(flex, none, center);
+        width: 55%;
+        height: 90%;
+        // border: $border;
+
+        img{
+            width: 90%;
+            height: 100%;
+        }
+    }
+}
+
+.contato2{
+    margin: 0 15px;
+
+    h4{
+        margin-bottom: 15px;
+        font-size: 15pt;
+    }
+
+    input{
+        outline: none;
+    }
+
+    input::placeholder{
+        font-weight: 600;
+    }
+
+    input:nth-child(2){
+        background-color: $gray;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 20px;
+        font-size: 16px;
+        margin-right: 10px;
+    }            
+
+    input:nth-child(3){
+        @include colorst($white, $red, .3s);
+        cursor: pointer;
+        border: none;
+        border-radius: 10px;
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+    
+    input:nth-child(3):hover{
+        @include colorst($white, $clearred, .3s);
+    }
+    
+    input:nth-child(3)::placeholder{
+        color: $white;
+        text-align: center;
+    }
+}
+
+.section3{
+    margin: 250px 0 70px 0;
+    @include display(flex, space-between, none);
+
+    .esquerda3, .direita3{
+        background-color: $gray;
+        border-radius: 10px;
+        width: 400px;
+        height: 150px;
+        padding: 20px;
+        @include display(flex, justify, none);
+        
+        .img{
+            background-color: $red;
+            width: 70px;
+            height: 70px;
+            border-radius: 100%;
+            margin: 15px 10px 10px 10px;
+        }
+
+        .texto{
+            flex-shrink: 100;
+            @include display(flex, flex-start, none);
+            flex-flow: column nowrap;
+            
+            .p1{
+                margin: 15px 0 25px 0;
+            }
+
+            h3{
+                font-weight: 500;
+            }
+
+            .p2{
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.container_footer{
+    background-color: $black;
+
+    .footer{
+        // border: $border;
+        color: $white;
+        margin: 0 auto;
+        width: clamp(40%, 1100px, 80%);
+        @include display(flex, none, none);
+        
+        div{
+            color: $white;
+            padding: 30px;
+
+            h2{
+                margin-bottom: 15px;
+            }
+
+            address{
+                p{
+                    margin: 15px 0;
+
+                    a{
+                        color: white;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            i{
+                font-size: 26px;
+                margin: 0 10px;
+                @include colorst($red, none, .3s);
+            }
+
+            i:hover{
+                @include colorst($clearred, none, .3s);
+            }
+        }
+    }
+}
