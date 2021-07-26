@@ -41,7 +41,7 @@ i{
 }
 
 .container{
-    width: clamp(40%, 1100px, 80%);
+    width: clamp(40%, 1100px, 90%);
     margin: $margin;
 }
 
@@ -56,45 +56,44 @@ i{
         font-style: italic;
         font-weight: 900;
         color: $red;
-    }
-
-    .logo span{
-        color: $black;
+            
+        span{
+            color: $black;
+        }
     }
 
     .links{
         font-size: 20px;
-    }
 
-    .links li{
-        display: inline;
-        line-height: 50px;
-    }
+        li{
+            display: inline;
+            line-height: 50px;
 
-    .links li a{
-        margin: 0 20px;
-        color: $black;
-        transition: .3s;
-    }
+            a{
+                margin: 0 20px;
+                color: $black;
+                transition: .3s;
+            }
 
-    .links li a:hover{
-        @include colorst($red, $white, .3s);
-    }
+            a:hover{
+                @include colorst($red, $white, .3s);
+            }
+        }
 
-    .links li:nth-child(4) a{
-        @include colorst($white, $red, .3s);
-        padding: 8px 50px;
-        border-radius: 10px;
-    }
+        li:nth-child(4) a{
+            @include colorst($white, $red, .3s);
+            padding: 8px 50px;
+            border-radius: 10px;
+        }
 
-    .links li:nth-child(4) a:hover{
-        @include colorst($white, $clearred, .3s);
+        li:nth-child(4) a:hover{
+            @include colorst($white, $clearred, .3s);
+        }
     }
 }
 
 .section1{
     display: flex;
-    margin: 130px 0;
     height: 700px;
     
     .esquerda1{
@@ -137,11 +136,6 @@ i{
             @include colorst($white, $clearred, .3s);
         }
     }
-}
-
-//Apenas detalhes
-.sectionpart2{
-    margin: 150px 0;
 }
 
 .section2{
@@ -297,6 +291,131 @@ i{
 
             i:hover{
                 @include colorst($clearred, none, .3s);
+            }
+        }
+    }
+}
+
+// Media queries
+@media (max-width: 35.9375em){
+
+    html, body{
+        width: 100%;
+    }
+
+    .container{
+        width: 100%;
+        margin: $margin;
+        
+        .navbar{
+            width: 100%;
+            flex-flow: column nowrap;
+            
+            .logo{
+                text-align: center;
+            }
+
+            .links{
+
+                ul{
+                    padding: 0;
+                    text-align: center;
+
+                    li{
+                        display: inline;
+                    }
+
+                    li:nth-child(4){
+                        display: none;
+                    }
+                }   
+            }
+        }
+
+        .section1{
+            flex-flow: column nowrap;
+
+            .esquerda1{
+                width: 100%;
+                justify-content: center;
+
+                img{
+                    width: 70%;
+                    height: 70%;
+                }
+            }
+
+            .direita1{
+                align-items: center;
+
+                h2{
+                    margin: 30px 0;
+                }
+            }
+        }
+
+        .section2{
+            flex-flow: column-reverse nowrap;
+            margin: 50px 0;
+
+            .esquerda2{
+                font-size: 20px;
+                margin: 15px 0;
+
+                li{
+                    margin: 20px 0;
+                }
+            }
+
+            .direita2{
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .contato2{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            width: 100%;
+            margin: 0;
+            text-align: center;
+
+            input{
+                // margin-bottom: 20px;
+                margin: 10px 0;
+            
+            }
+        }
+
+        .section3{
+            flex-flow: column nowrap;
+            margin: 100px 0;
+            // width: 30%;
+
+            .esquerda3, .direita3{
+                margin: 15px 0;
+                width: 85%;
+                margin: 20px auto;
+            }
+        }
+    }
+    .container_footer{
+        .footer{
+            flex-flow: column nowrap;
+
+            div:first-child{
+                text-align: center;
+                
+                h2{
+                    font-size: 40px;
+                }
+            }
+
+            div{
+                padding: 15px 30px;
             }
         }
     }

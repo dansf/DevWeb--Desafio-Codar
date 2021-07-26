@@ -21,7 +21,7 @@ i {
 }
 
 .container {
-  width: clamp(40%, 1100px, 80%);
+  width: clamp(40%, 1100px, 90%);
   margin: 0 auto;
 }
 
@@ -90,7 +90,6 @@ i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 130px 0;
   height: 700px;
 }
 
@@ -162,10 +161,6 @@ i {
   background-color: #e74953;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
-
-.sectionpart2 {
-  margin: 150px 0;
 }
 
 .section2 {
@@ -420,5 +415,122 @@ i {
   background-color: none;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 35.9375em) {
+  html, body {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container .navbar {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .container .navbar .logo {
+    text-align: center;
+  }
+  .container .navbar .links ul {
+    padding: 0;
+    text-align: center;
+  }
+  .container .navbar .links ul li {
+    display: inline;
+  }
+  .container .navbar .links ul li:nth-child(4) {
+    display: none;
+  }
+  .container .section1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .container .section1 .esquerda1 {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .section1 .esquerda1 img {
+    width: 70%;
+    height: 70%;
+  }
+  .container .section1 .direita1 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .section1 .direita1 h2 {
+    margin: 30px 0;
+  }
+  .container .section2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: column-reverse nowrap;
+            flex-flow: column-reverse nowrap;
+    margin: 50px 0;
+  }
+  .container .section2 .esquerda2 {
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .container .section2 .esquerda2 li {
+    margin: 20px 0;
+  }
+  .container .section2 .direita2 img {
+    width: 100%;
+    height: 100%;
+  }
+  .container .contato2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+  .container .contato2 input {
+    margin: 10px 0;
+  }
+  .container .section3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    margin: 100px 0;
+  }
+  .container .section3 .esquerda3, .container .section3 .direita3 {
+    margin: 15px 0;
+    width: 85%;
+    margin: 20px auto;
+  }
+  .container_footer .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .container_footer .footer div:first-child {
+    text-align: center;
+  }
+  .container_footer .footer div:first-child h2 {
+    font-size: 40px;
+  }
+  .container_footer .footer div {
+    padding: 15px 30px;
+  }
 }
 /*# sourceMappingURL=estilo.css.map */
