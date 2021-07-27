@@ -49,7 +49,7 @@
 
 <ul>
     <li>Html</li>
-    <li>Css</li>
+    <li>Scss</li>
     <li>Cor: #D6000D</li>
     <li>Fonte: Roboto, sans-serif</li>
 </ul><br/>
